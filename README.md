@@ -45,36 +45,30 @@ This algorithm takes raw file from AFM microscope (.txt) as input and fit the co
 New .txt files are saved as ouput in a folder of choice containing cantilever height, vertical deflection, time and segment.
 
 0. INPUT
-
-   information about the performed AFM experiment need to be entered by the user
-
-   spring constant of the cantilever used, input folder and matlab working folder
-
+   information about the performed AFM experiment need to be entered by the user (spring constant of the cantilever used, input folder and matlab working folder)
+   
 1. open input folder and list file names for next step
 2. FOR cycle which opens one file at the time from the input folder and perform post-processing steps
-  1. open file
-  2. save data from file into arrays
-  3. fit contact point on extend curve
-  4. plot data after fitting the CP for user verification
-  5. save pre-processed file as .txt files in the output folder
+..1. open file
+..2. save data from file into arrays
+..3. fit contact point on extend curve
+..4. plot data after fitting the CP for user verification
+..5. save pre-processed file as .txt files in the output folder
 
 ##### AFM2a_youngmodulus.m
 This algorithm fits the Hertz model for a spherical indenter on a half space for increasing indentation depths.
 It takes the files saved with AFM1_contactpoint.m as input and give as output the Young's modulus for each indentation depth for each file (saved as .xslx file).
 
 0. INPUT
-
-   information about the performed AFM experiment need to be entered by the user
-
-   indenter radius, input folder and matlab working folder
+   information about the performed AFM experiment need to be entered by the user (indenter radius, input folder and matlab working folder)
 
 1. open input folder and list file names for next step
 2. initialise output arrays
 3. FOR cycle which opens one file at the time and perform post-processing steps
-  1. open file
-  2. save data from file into arrays
-  3. find **Young's modulus for increasing indentation dephts** (calls createFitHertz.m)
-  4. save output for opened file
+..1. open file
+..2. save data from file into arrays
+..3. find **Young's modulus for increasing indentation dephts** (calls createFitHertz.m)
+..4. save output for opened file
 4. save summary output file for all files
 
 ##### AFM2b_pointwise.m
@@ -82,16 +76,13 @@ This algorithm fits the Hertz model for a spherical indenter on a half space for
 It takes the files saved with AFM1_contactpoint.m as input and give as output the Young's modulus for each indentation depth for each file (saved as .xslx file).
 
 0. INPUT
-
-   information about the performed AFM experiment need to be entered by the user
-
-   indenter radius, input folder and matlab working folder
+   information about the performed AFM experiment need to be entered by the user (indenter radius, input folder and matlab working folder) 
 
 1. open input folder and list file names for next step
 2. initialise output arrays
 3. FOR cycle which opens one file at the time and perform post-processing steps
-  1. open file
-  2. save data from file into arrays
-  3. find **pointwise Young's modulus for increasing indentation dephts**
-  4. save output for opened file
+..1. open file
+..2. save data from file into arrays
+..3. find **pointwise Young's modulus for increasing indentation dephts**
+..4. save output for opened file
 4. save summary output file for all files
