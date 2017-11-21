@@ -8,6 +8,8 @@ Two models were used to obtain information on glycocalyx mechanical properties:
 1. the _Hertz model_ for a spherical indenter over a half space,
 2. a _non-Hertzian pointwise approach_ (see [O'Callaghan R. et al 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3174749/?tool=pmcentrez))
 
+All codes were tested on Matlab R2016a version
+
 #### Raw data
 The raw data are force-spectroscopy .txt files from AFM experiments. They contain four columns: cantilever height [m], cantilever vertical deflection [N], series time [s], segment time [s].
 All the experiments in this context were carried out with a Nanowizard 3 microscope from JPK. The built-in software provide .txt files in this form (comments are preceded by #)
